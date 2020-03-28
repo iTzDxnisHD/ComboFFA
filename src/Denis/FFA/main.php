@@ -102,7 +102,8 @@ class main extends PluginBase implements Listener
         $chest = Item::get(311, 0, 1);
         $hose = Item::get(312, 0, 1);
         $boots = Item::get(313, 0, 1);
-        $player->getInventory()->addItem(Item::get(320, 0, 64));
+        $item = new Item(Item::DIAMOND_SWORD);
+        $item->setCustomName("§7Dia-Schwert");
         $player->getArmorInventory()->setHelmet($helm);
         $player->getArmorInventory()->setChestplate($chest);
         $player->getArmorInventory()->setLeggings($hose);
@@ -123,7 +124,8 @@ class main extends PluginBase implements Listener
         $chest = Item::get(311, 0, 1);
         $hose = Item::get(312, 0, 1);
         $boots = Item::get(313, 0, 1);
-        $player->getInventory()->addItem(Item::get(320, 0, 64));
+        $item = new Item(Item::DIAMOND_SWORD);
+        $item->setCustomName("§7Dia-Schwert");
         $player->getArmorInventory()->setHelmet($helm);
         $player->getArmorInventory()->setChestplate($chest);
         $player->getArmorInventory()->setLeggings($hose);
