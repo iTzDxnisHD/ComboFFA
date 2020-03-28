@@ -185,6 +185,7 @@ class main extends PluginBase implements Listener
                 $killer->sendMessage($this->prefix . "Du hast" . $opfer->getNameTag() . " getötet!");
             }
         }
+      }
         
         public function onQuit(PlayerQuitEvent $event)
         {
