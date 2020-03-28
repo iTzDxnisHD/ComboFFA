@@ -186,7 +186,7 @@ class main extends PluginBase implements Listener
             }
         }
         
-        public function onQuit(PlayerInteractEvent $event)
+        public function onQuit(PlayerQuitEvent $event)
         {
           $player = $event->getPlayer();
           $name = $player->getName();
